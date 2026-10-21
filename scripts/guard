@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#
+# guard: Claude Code PreToolUse hook. Denies an edit that must go through
+# the editor in tribe: tribe-editor guard exits 2, which denies it, and its
+# stderr tells Claude why. Claude's own files (~/.claude) are left alone.
+#
+
+set -e
+
+FILE=$(jq -r '.tool_input.file_path // .tool_input.notebook_path // empty')
+
+case "$FILE" in
+  "" | "$HOME"/.claude/*) exit 0 ;;
+esac
+
+exec tribe-editor guard "$FILE"

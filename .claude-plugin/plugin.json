@@ -1,0 +1,10 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "tribe",
+  "version": "0.1.0",
+  "description": "Claude Code as a participant in tribe",
+  "author": {
+    "name": "Roman Bolshakov",
+    "email": "roman@subtile.systems"
+  }
+}
