@@ -1,6 +1,6 @@
 # claude-tribe: Claude Code in tribe
 
-A Claude Code plugin that makes Claude a participant in tribe:
+A Claude Code plugin that makes Claude a participant in tribe 0.1.0:
 
 - While an editor is registered, Claude's own edits to the human's files
   are denied. Claude makes them through the editor or in a git worktree,
@@ -11,6 +11,6 @@ A Claude Code plugin that makes Claude a participant in tribe:
 ## Install
 
 Needs `tribe` and `tribe-editor` on PATH, `jq`, and the tribe skill in
-`~/.claude/skills`. Then load the plugin, e.g. for one session:
+`~/.claude/skills`. In Claude Code:
 
-    claude --plugin-dir /path/to/claude-tribe
+    /plugin install tribe --marketplace roolebo/claude-tribe
