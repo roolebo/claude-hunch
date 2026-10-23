@@ -1,15 +1,15 @@
 {
-  "name": "claude-tribe",
-  "description": "Claude Code in tribe",
+  "name": "claude-hunch",
+  "description": "Claude Code in hunch",
   "owner": {
     "name": "Roman Bolshakov",
     "email": "roman@subtile.systems"
   },
   "plugins": [
     {
-      "name": "tribe",
+      "name": "hunch",
       "source": "./",
-      "description": "Claude Code as a participant in tribe"
+      "description": "Claude Code as a participant in hunch"
     }
   ]
 }

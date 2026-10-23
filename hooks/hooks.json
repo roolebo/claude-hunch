@@ -5,7 +5,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "tribe set role agent 2> /dev/null || true",
+            "command": "hunch set role agent 2> /dev/null || true",
             "timeout": 5
           }
         ]
@@ -16,7 +16,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "tribe clear 2> /dev/null || true",
+            "command": "hunch clear 2> /dev/null || true",
             "timeout": 5
           }
         ]
